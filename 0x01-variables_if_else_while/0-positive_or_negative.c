@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
-*main - prints out a value depending on the number
+* main - prints out a value depending on the number
 *
-*Return: no error
+* Return: no error
 */
 int main(void)
 {
