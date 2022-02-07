@@ -1,23 +1,17 @@
-#include <stdio.h>
 #include "main.h"
-
 /**
-* main - check the code.
-*
-* Return: Always 0.
+* _islower - es minus 1  o  mayus 0
+* @c: sjakd
+* Return: 1 o 0
 */
-int main(void)
+int _islower(int c)
 {
-int islower(int c);
-if( islower(c) )
+if (c < 123 && c > 96)
 {
-_putchar (1);
+return (1);
 }
 else
 {
-_putchar(0);
-}
-{
-_putchar('\n');
 return (0);
+}
 }
