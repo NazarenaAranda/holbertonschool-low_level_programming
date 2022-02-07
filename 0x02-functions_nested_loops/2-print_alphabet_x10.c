@@ -1,15 +1,17 @@
-#include <stdio.h>
+#include "main.h"
 /**
-*  print_alphabet - imprime el alfabeto
-*
-*  Return: always void
+* print_alphabet_x10 - sadsa
 */
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
+int i;
 char a;
-for (a = 'a' ; a <= 'z'; a++)
+for (i = 0 ; i < 10 ; i++)
 {
-putchar(a);
+for (a = 'a' ; a <= 'z' ; a++)
+{
+_putchar(a);
 }
-putchar('\n');
+_putchar('\n');
+}
 }
