@@ -1,11 +1,10 @@
 #include <stdio.h>
-
 /**
-* print_alphabet - print the alphabet
+*  print_alphabet - imprime el alfabeto
 *
-* Return: always void
+*  Return: always void
 */
-void print_alphabet(void)
+void print_alphabet_x10(void);
 {
 char a;
 for (a = 'a' ; a <= 'z'; a++)
