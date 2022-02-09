@@ -7,6 +7,7 @@ void print_square(int size)
 {
 	int l;
 	int a;
+
 	if (size <= 0)
 	{
 	_putchar('\n');
