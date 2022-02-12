@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  * puts_half - ad
- * @str: string
+ * @sr: string
  */
-void puts_half(char str)
+void puts_half(char *str)
 {
 int largo = _strlen(str);
 int i = 0;
@@ -26,7 +26,7 @@ _putchar('\n');
 }
 /**
  * _strlen - ada
- * @s: das
+ * @s das
  * Return: 0
  */
 int _strlen(char *s)
@@ -38,7 +38,7 @@ return (0);
 while (l != '\0')
 {
 cont++;
-l = *(s + cont)
+l = *(s + cont);
 }
 return (cont);
 }
