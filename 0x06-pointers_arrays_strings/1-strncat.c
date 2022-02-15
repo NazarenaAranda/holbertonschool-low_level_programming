@@ -1,8 +1,8 @@
-#include "holberton.h"
+#include "main.h"
 /**
- * _strncat - function is similar to the _strcat
- * @dest: char pointer
- * @src: char pointer
+ * _strncat - Esta fundion es parecida a  _strcat
+ * @dest: char puntero
+ * @src: char puntero
  * @n: int
  * Return: dest
  */

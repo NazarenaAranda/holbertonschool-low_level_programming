@@ -1,10 +1,10 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * _strcat - concatenate two strings
- * @dest: char string to concatenate to
- * @src: char string
- * Return: pointer to resulting string `dest`
+ * _strcat - concatenar dos strings
+ * @dest: concatenar src con esta
+ * @src: agregar esta string a dest
+ * Return: que el puntero vaya a `dest`
  */
 
 char *_strcat(char *dest, char *src)

@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * leet - Capitalize a string
@@ -20,16 +20,16 @@ char *leet(char *s)
 
 	while (*(s + c) != '\0')
 	{
-		let_c = 0;
-		while (let[let_c] != '\0')
-		{
-			if (*(s + c) == let[let_c])
-			{
-				*(s + c) = num[let_c];
-			}
-			let_c++;
-		}
-		c++;
+	let_c = 0;
+	while (let[let_c] != '\0')
+	{
+	if (*(s + c) == let[let_c])
+	{
+	*(s + c) = num[let_c];
+	}
+	let_c++;
+	}
+	c++;
 	}
 	return (s);
 }
