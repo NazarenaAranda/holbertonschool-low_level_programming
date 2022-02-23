@@ -6,7 +6,7 @@
 * Return: prime
 */
 
-int _prime(int n,int i)
+int _prime(int n, int i)
 {
 	if (n <= 1)
 	{
@@ -19,8 +19,8 @@ int _prime(int n,int i)
 
 		else if (i == n)
 			return (1);
-	
-		return (_prime (n, i + 1));
+
+		return (_prime(n, i + 1));
 	}
 	return (0);
 }
@@ -28,11 +28,10 @@ int _prime(int n,int i)
 /**
 * is_prime_number- number prime
 * @n: integer
-* @i: variable
 * Return: prime
 */
 
 int is_prime_number(int n)
 {
-	return (_prime (n, 1));
+	return (_prime(n, 1));
 }
