@@ -2,9 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* strdup - duplicate a tring
+* _strdup - duplicate a tring
 * @str: string
 * Return: NULL of
+* _strlen: the length of the string 
 */
 
 char *_strdup(char *str)
@@ -22,7 +23,7 @@ char *_strdup(char *str)
 		i++;
 	}
 
-	s = malloc((sizeof(char) ));
+	s = malloc((sizeof(char) *i +1));
 
 	if (s == NULL)
 	{
@@ -37,4 +38,3 @@ char *_strdup(char *str)
 	s[a] = '\0';
 	return (s);
 }
-
