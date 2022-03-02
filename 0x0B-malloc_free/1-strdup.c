@@ -5,7 +5,6 @@
 * _strdup - duplicate a tring
 * @str: string
 * Return: NULL of
-* _strlen: the length of the string 
 */
 
 char *_strdup(char *str)
@@ -23,8 +22,7 @@ char *_strdup(char *str)
 		i++;
 	}
 
-	s = malloc((sizeof(char) *i +1));
-
+	s = malloc((sizeof(char) * i + 1));
 	if (s == NULL)
 	{
 		return (NULL);
