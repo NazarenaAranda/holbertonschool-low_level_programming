@@ -8,11 +8,11 @@
 * Description:  creates a new dog
 * Return: sa
 */
- dog_t *new_dog(char *name, float age, char *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	struct dog *my_dog;
 	char *namee, *ownerr;
-	int a = 0, b =0, c;
+	int a = 0, b = 0, c;
 
 	my_dog = malloc(sizeof(struct dog));
 	if (my_dog == NULL)
