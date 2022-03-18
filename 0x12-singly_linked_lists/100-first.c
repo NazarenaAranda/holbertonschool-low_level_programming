@@ -1,7 +1,4 @@
 #include <stdio.h>
-
-void __attribute__((constructor)) lieb(void);
-
 /**
 * lieb - Prints a string
 */
