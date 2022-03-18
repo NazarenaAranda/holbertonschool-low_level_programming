@@ -1,4 +1,5 @@
 #include <stdio.h>
+void __attribute__((constructor)) hare(void);
 /**
 * lieb - Prints a string
 */
