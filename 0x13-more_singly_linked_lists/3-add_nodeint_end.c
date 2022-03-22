@@ -9,8 +9,8 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *auxiliar;
 	listint_t *newnode;
-	auxiliar = *head;
 
+	auxiliar = *head;
 	while (auxiliar && auxiliar->next != NULL)
 		auxiliar = auxiliar->next;
 

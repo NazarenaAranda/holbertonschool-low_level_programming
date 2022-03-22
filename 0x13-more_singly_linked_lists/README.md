@@ -19,3 +19,9 @@ Doble puntero se le llama a cuando hay un puntero que apunta a otro interiorment
 que agreguemos un nodo al comienzo de uns lista listint_t, para esto primero tenemos que declarar el nuevo puntero el cual va a ser la direccion al nuevo nodo, con este puntero vamos
 a liberar un espacio en memoria con malloc, luego le damos distintas condiciones, si el nuevo node es nulo, retorna NULL, pero si encuentra la direccion de memoria del nuevo nodo, lo que
 retorna es la direccion de este.
+
+3. Add node at the end:
+
+Para este ejercicio lo que tuve que hacer fue crear dos punteros, uno auxiliar y otro nuevo puntero para el nuevo nodo. Lo que nos piden en el ejercicio es agregar un nodo al final de
+la lista listint_t, primero declaramos los punteros, el auxiliar lo igualamos al puntero que ellos nos dan en el prototipo. Con el que apunta a la direccion del nuevo nodo liberamos 
+memoria utilizando malloc, despues de darle condiciones devolvemos la direccion del nuevo nodo.
