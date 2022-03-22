@@ -47,3 +47,5 @@ la lista enlazada está vacía devuelve 0. El procedimiento realizado para hacer
 luego igualamos nuestro puntero con el que nos dan en el prototipo, siguiente a esto el puntero que nos dan lo igualamos al puntero que nos dan pero moviendose, para eso usamos next, luego
 la variable int la igualamos a nuestro puntero el cual va a tener la flecha a n. Finalmente liberamos la memoria de nuestro puntero y retornamos nuestra variable int.
 
+7. Get node at index:
+
