@@ -30,4 +30,20 @@ memoria utilizando malloc, despues de darle condiciones devolvemos la direccion 
 
 En este caso nos piden que hagamos una funcion que libere una lista listint_t, para hacer esto lo que vamos a utilizar es free, primero que todo creamos un puntero auxiliar, el cual mas
 adelante igualemos con el puntero del prototipo. Lo igualaremos luego de usar while para poner la condicion de que el puntero que nos dan sea diferente a NULL. Despues de igualarlos, vamos
-a hacer que el puntero que nos dan se iguale al mismo puntero pero con ->next, por ultimo liberamos el auxiliar que habiamos creadi anteriormente.
+a hacer que el puntero que nos dan se iguale al mismo puntero pero con ->next, por ultimo liberamos el auxiliar que habiamos creado anteriormente.
+
+5. Free:
+
+La funcion que tenemos que hacer tiene que liberar la memoria asignada para una lista y establecer el encabezado (head) en NULL, como en casos anteriores creammos un puntero auxiliar,
+primero que nada tenemos que darle la condicion de que si el puntero que nos dan es igual a null, que no devuelva nada, y ahi terminaria toda la funcion, pero si no es asi, si no es
+NULL, tenemos que hacer un while donde si existe el puntero que nos dan, igualamos nuestro auxiliar con el nombrado anteriormente pero pasando a next con la flechita. Luego liberamos el
+puntero que nos dan y lo igualamos ahora sin la flechita con el auxiliar nuestro, porque no necesitamos que siga avanzando. Por ultimo cumplimos lo que nos pide la letra, que head sea
+igual a NULL, y ahi terminaria nuestra funcion.
+
+6. Pop:
+
+Lo que nos dicen que hagamos es una funcion que elimine el nodo principal de una lista enlazada listint_t y devuelva los datos del nodo principal (n). Nos da la condicion de que si
+la lista enlazada está vacía devuelve 0. El procedimiento realizado para hacer esto posible fue crear dos variables, una tipo int, y un puntero auxiliar. Le damos la condicion dada y
+luego igualamos nuestro puntero con el que nos dan en el prototipo, siguiente a esto el puntero que nos dan lo igualamos al puntero que nos dan pero moviendose, para eso usamos next, luego
+la variable int la igualamos a nuestro puntero el cual va a tener la flecha a n. Finalmente liberamos la memoria de nuestro puntero y retornamos nuestra variable int.
+
