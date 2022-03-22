@@ -25,3 +25,9 @@ retorna es la direccion de este.
 Para este ejercicio lo que tuve que hacer fue crear dos punteros, uno auxiliar y otro nuevo puntero para el nuevo nodo. Lo que nos piden en el ejercicio es agregar un nodo al final de
 la lista listint_t, primero declaramos los punteros, el auxiliar lo igualamos al puntero que ellos nos dan en el prototipo. Con el que apunta a la direccion del nuevo nodo liberamos 
 memoria utilizando malloc, despues de darle condiciones devolvemos la direccion del nuevo nodo.
+
+4. Free list:
+
+En este caso nos piden que hagamos una funcion que libere una lista listint_t, para hacer esto lo que vamos a utilizar es free, primero que todo creamos un puntero auxiliar, el cual mas
+adelante igualemos con el puntero del prototipo. Lo igualaremos luego de usar while para poner la condicion de que el puntero que nos dan sea diferente a NULL. Despues de igualarlos, vamos
+a hacer que el puntero que nos dan se iguale al mismo puntero pero con ->next, por ultimo liberamos el auxiliar que habiamos creadi anteriormente.
