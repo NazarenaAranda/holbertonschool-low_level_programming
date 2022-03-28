@@ -24,12 +24,14 @@ int create_file(const char *filename, char *text_content)
 		;
 
 	guardar = malloc(contador * sizeof(char));
+	if (guardar == NULL)
+		return (-1);
 
 	abrir = open(filename, O_WRONLY | O_RDONLY, 600);
 	leer = read(abrir, guardar, contador);
 	escribir = write(STDOUT_FILENO, guardar, leer);
 
-	if (leer != escribir || abrir == -1 || leer == -1 || escribir == -1 || contador == -1)
+	if (leer != escribir || abrir == -1 || leer == -1 || escribir == -1)
 		return (-1);
 
 	free(guardar);
