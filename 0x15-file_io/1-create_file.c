@@ -16,7 +16,7 @@ int create_file(const char *filename, char *text_content)
 
 	if (text_content == NULL)
 	{
-		abrir = open(filename, O_CREAT, 600);
+		abrir = open(filename, O_CREAT, 0600);
 			return (1);
 	}
 
@@ -27,7 +27,7 @@ int create_file(const char *filename, char *text_content)
 	if (guardar == NULL)
 		return (-1);
 
-	abrir = open(filename, 600);
+	abrir = open(filename, 0600);
 	leer = read(abrir, guardar, contador);
 	escribir = write(STDOUT_FILENO, guardar, leer);
 
