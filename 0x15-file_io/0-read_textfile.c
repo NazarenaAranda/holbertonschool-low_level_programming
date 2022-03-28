@@ -8,20 +8,20 @@
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t abrir,leer, escribir;
+	ssize_t abrir, leer, escribir;
 	char *guardar;
 
-	guardar = malloc (sizeof(char) * letters);
+	guardar = malloc(sizeof(char) * letters);
 	if (guardar == NULL)
 		return (0);
-	else
-	{
-		abrir = open(filename, O_RDONLY);
-		leer = read(abrir, guardar, letters);
-		escribir = write(STDOUT_FILENO, guardar, leer);
-	}
-	if (abrir == -1 || leer == -1 || escribir == -1)
+
+	abrir = open(filename, O_RDONLY);
+	leer = read(abrir, guardar, letters);
+	escribir = write(STDOUT_FILENO, guardar, leer);
+
+	if (leer != escribir || abrir == -1 || leer == -1 || escribir == -1)
 		return (0);
 	free(guardar);
+	close(abrir);
 	return (escribir);
 }
