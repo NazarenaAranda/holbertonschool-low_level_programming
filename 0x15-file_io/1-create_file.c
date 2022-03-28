@@ -8,33 +8,26 @@
 */
 int create_file(const char *filename, char *text_content)
 {
-	int abrir, contador, leer, escribir;
-	char *guardar;
+	int abrir, contador, escribir;
 
 	if (filename == NULL)
 		return (-1);
 
 	if (text_content == NULL)
 	{
-		abrir = open(filename, O_CREAT, 0600);
-			return (1);
+		text_content = "";
 	}
 
 	for (contador = 0; text_content[contador] != '\0'; contador++)
 		;
 
-	guardar = malloc(contador * sizeof(char));
-	if (guardar == NULL)
+
+	abrir = open(filename, O_CREAT | O_WRONLY | O_RDONLY | O_TRUNC, 0600);
+	escribir = write(abrir, text_content, contador);
+
+	if (abrir == -1 || escribir == -1)
 		return (-1);
 
-	abrir = open(filename, 0600);
-	leer = read(abrir, guardar, contador);
-	escribir = write(STDOUT_FILENO, guardar, leer);
-
-	if (leer != escribir || abrir == -1 || leer == -1 || escribir == -1)
-		return (-1);
-
-	free(guardar);
 	close(abrir);
 	return (1);
 }
