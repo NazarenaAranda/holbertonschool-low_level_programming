@@ -34,5 +34,5 @@ int create_file(const char *filename, char *text_content)
 
 	free(guardar);
 	close(abrir);
-	return (escribir + 1);
+	return (1);
 }
