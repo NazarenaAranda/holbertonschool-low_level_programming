@@ -25,7 +25,7 @@ int create_file(const char *filename, char *text_content)
 
 	guardar = malloc(contador * sizeof(char));
 
-	abrir = open(filename, O_CREAT | O_WRONLY | O_RDONLY, 600);
+	abrir = open(filename, O_WRONLY | O_RDONLY, 600);
 	leer = read(abrir, guardar, contador);
 	escribir = write(STDOUT_FILENO, guardar, leer);
 
