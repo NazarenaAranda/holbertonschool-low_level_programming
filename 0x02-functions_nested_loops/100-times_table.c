@@ -1,4 +1,4 @@
-#include "main.h" 
+#include "main.h"
 
 /**
  * print_times_table - Prints the times table of the input, starting with 0.
@@ -25,18 +25,18 @@ void print_times_table(int n)
 
 				if (produ <= 99)
 					_putchar(' ');
-				
-				
+
+
 				if (produ <= 9)
 					_putchar(' ');
 
-				
+
 				if (produ >= 100)
 				{
 					_putchar((produ / 100) + '0');
 					_putchar(((produ / 10)) % 10 + '0');
 				}
-				
+
 				else if (produ <= 99 && produ >= 10)
 				{
 					_putchar((produ / 10) + '0');
