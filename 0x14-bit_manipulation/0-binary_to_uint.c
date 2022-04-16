@@ -6,21 +6,28 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-
-	unsigned int convertid = 0;
+	unsigned int convertido = 0;
+	unsigned int aux = 1;
 	int i = 0;
+	int j = 0;
 
 	if (b == NULL)
 		return (0);
 
 	while (b[i])
 	{
-	while (b[i] >= 'a' && b[i] <= 'z')
-		return (0);
-
-	convertid <<= 1;
-	convertid = convertid + b[i] - '0';
-	i++;
+		if (b[i] != '0' && b[i] != '1')
+			return (0);
+		i++;
 	}
-	return (convertid);
+
+	for (j = i - 1; j >= 0; j--)
+	{
+		if (b[j] == '1')
+			convertido += aux;
+
+		aux = aux * 2;
+	}
+
+	return (convertido);
 }
