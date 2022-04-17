@@ -35,7 +35,7 @@ int op_mul(int a, int b)
  * op_div - dividir a con b
  * @a: primer nummero
  * @b: segundo numero
- * Return: resultado 
+ * Return: resultado
 */
 int op_div(int a, int b)
 {
