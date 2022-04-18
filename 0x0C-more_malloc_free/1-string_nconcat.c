@@ -1,57 +1,52 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
-
+#include <stdio.h>
 /**
-* string_nconcat - multiplicar dos numeros
-* @s1: primer string
-* @s2: string 2
-* @n: variable
-* Return: pointer
-*/
+ * string_nconcat - concatenar dos string
+ * @s1: string 1
+ * @s2: string 2
+ * @n: numero de  bytes de s2 concatenados a s1
+ * Return: s1 + n bytes de s2
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-
-	char *s;
-	unsigned int a = 0, b = 0, c = 0, d;
+	char *punt;
+	unsigned int a, i = 0, b = 0;
+	unsigned int  c = 0;
 
 	if (s1 == NULL)
-		s1 = "";
+	s1 = "";
 	if (s2 == NULL)
-		s2 = "";
+	s2 = "";
 
-	while (s2[c] != '\0')
-	{
-		c++;
-	}
+	while (s1[i] != '\0')
+		i++;
 
-	if (c <= n)
-		n = c;
-	while (s1[a] != '\0')
-	{
-		a++;
-	}
+	while (s2[b] != '\0')
+		b++;
 
-	s = malloc((a + 1 + n) * sizeof(char));
+	if (b < n)
+		n = b;
 
-	if (s == NULL)
+	punt = malloc((1 + i + n)*(sizeof(char)));
+	if (punt == NULL)
 		return (NULL);
 	c = 0;
-	for (d = 0; d < (a + n); d++)
+	b = 0;
+
+	for (a = 0; a < (n + i); a++)
 	{
-		if (s1[d] == '\0')
+		if (s1[a] == '\0')
 			b = 1;
 		if (b == 0)
-			s[d] = s1[d];
-		if (d == 1)
+			punt[a] = s1[a];
+		if (b == 1)
 		{
-			s[d] = s2[c];
+			punt[a] = s2[c];
 			c++;
 		}
 	}
-	s[n + a] = '\0';
-	return (s);
+
+	punt[n + i] = '\0';
+	return (punt);
 }
-
-
-
