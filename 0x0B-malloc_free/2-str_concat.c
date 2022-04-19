@@ -27,12 +27,12 @@ char *str_concat(char *s1, char *s2)
 		b++;
 	}
 	c++;
-
 	a = malloc(sizeof(char) * c);
 	if (a == NULL)
 		return ('\0');
-	b = 0;
+
 	e = 0;
+	b = 0;
 
 	for (d = 0; d < c; d++)
 	{
