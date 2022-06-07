@@ -2,7 +2,7 @@
 /**
  * sum_dlistint - retorna la suma de todos los datos
  * @head: head
- * Return: la suma de todos los datos (n) o si la lista está vacía, devuelve 0
+ * Return: la suma de todos los datos (n) o si la lista está vacía, ret 0
  */
 int sum_dlistint(dlistint_t *head)
 {
