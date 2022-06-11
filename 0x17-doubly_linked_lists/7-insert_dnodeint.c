@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * insert_dnodeint_at_indexv - inserte un nuevo nodo en una posición dada
+ * insert_dnodeint_at_index - inserte un nuevo nodo en una posición dada
  * @idx: índice de la lista donde se debe agregar el nuevo nodo
  * @n: nuevo nodo
  * @h: head
